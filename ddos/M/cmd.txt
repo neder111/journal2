@@ -1,0 +1,12 @@
+python3 MQTT_SlowDoS.py -a localhost -p 1883 -k 60
+python3 client_pub.py -a localhost -p 1883 -k 60
+python3 client_sub.py -a localhost -p 1883 -k 60
+
+python3 MQTT_SlowDoS.py -a 10.0.0.1 -p 1883 -k 60
+python3 client_pub.py -a 10.0.0.1 -p 1883 -k 60
+python3 client_sub.py -a 10.0.0.1 -p 1883 -k 60
+
+python3 MQTT_SlowDoS.py -a 10.0.0.2 -p 1883 -k 60
+python3 client_pub.py -a 10.0.0.2 -p 1883 -k 60
+python3 client_sub.py -a 10.0.0.2 -p 1883 -k 60
+
